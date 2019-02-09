@@ -1,0 +1,7 @@
+{Error using vertcat
+Out of memory. Type HELP MEMORY for your options.
+
+Error in batch_forwardmodel1cm_beamforming_single_subject (line 243)
+        source_timecourses1cm.trial = [source_timecourses1cm.trial;
+        timeseries_voxel];
+} 

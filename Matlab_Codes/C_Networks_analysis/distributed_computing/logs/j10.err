@@ -1,0 +1,9 @@
+{Error using horzcat
+Out of memory. Type HELP MEMORY for your options.
+
+Error in ft_resampledata (line 202)
+    data.trial{itr} = [zeros(nchan, padsmp(itr))     data.trial{itr}];
+
+Error in batch_forwardmodel1cm_beamforming_single_subject (line 199)
+data_continuous_concat_down = ft_resampledata(cfg, data_continuous_concat);
+} 

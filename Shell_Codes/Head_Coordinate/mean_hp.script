@@ -1,0 +1,187 @@
+
+
+# Calcul de la position moyenne (moyenne bidon rapide avec duree negative)
+dataHandler -r -avg *.fif -hp mean -time 0 -.1 meanhp.fif
+
+# Calcul des fihiers .hc (head coordinate)
+dataHandler -r -hc *.fif meanhp.fif
+
+## verif position moyenne
+megDraw *.hc
+
+## tsss avec position moyenne
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f file_name.fif
+       
+########################################################################################################################### 
+
+## Calcul position moyenne subject 1
+dataHandler -r -avg 170124/run01.fif 170124/run02.fif 170303/run01.fif 170303/run02.fif -hp mean -time 0 -.1 meanhp.fif
+
+## Calcul position moyenne subject 6
+dataHandler -r -avg 170203/run01.fif 170203/run02.fif 170502/run01.fif 170502/run02.fif -hp mean -time 0 -.1 meanhp.fif
+
+
+## Calcul position moyenne subject 15
+dataHandler -r -avg 170215/run01.fif 170215/run02.fif 170322/run01.fif 170322/run02.fif -hp mean -time 0 -.1 meanhp.fif
+
+
+## Calcul position moyenne subject 20
+dataHandler -r -avg 170217/run01.fif 170217/run02.fif 170324/run01.fif 170324/run02.fif -hp mean -time 0 -.1 meanhp.fif
+
+
+## Calcul position moyenne subject 10
+dataHandler -r -avg 170208/run01.fif 170208/run02.fif 170315/run01.fif 170315/run02.fif -hp mean -time 0 -.1 meanhp.fif
+
+## Calcul position moyenne subject 11
+dataHandler -r -avg 170210/run01.fif 170210/run02.fif 170317/run01.fif 170317/run02.fif -hp mean -time 0 -.1 meanhp.fif
+
+## Calcul position moyenne subject 13
+dataHandler -r -avg 170210/run01.fif 170210/run02.fif 170317/run01.fif 170317/run02.fif -hp mean -time 0 -.1 meanhp.fif
+
+## Calcul position moyenne subject 16
+dataHandler -r -avg 170215/run01.fif 170215/run02.fif 170322/run01.fif 170322/run02.fif -hp mean -time 0 -.1 meanhp.fif
+
+## Calcul position moyenne subject 22
+dataHandler -r -avg 170310/run01.fif 170310/run02.fif 170418/run01.fif 170418/run02.fif -hp mean -time 0 -.1 meanhp.fif
+
+#############################################################################################################################
+
+## tsss avec position moyenne pour subject 1, 6, 15, 20, 10, 11, 13, 16, 22
+
+
+cp selfi01_s01/meanhp.fif selfi01_s01/170124/meanhp.fif 
+cp selfi01_s01/meanhp.fif selfi01_s01/170303/meanhp.fif
+cp selfi06_s06/meanhp.fif selfi06_s06/170203/meanhp.fif
+cp selfi06_s06/meanhp.fif selfi06_s06/170502/meanhp.fif
+cp selfi15_s15/meanhp.fif selfi15_s15/170215/meanhp.fif
+cp selfi15_s15/meanhp.fif selfi15_s15/170322/meanhp.fif
+cp selfi20_s20/meanhp.fif selfi20_s20/170217/meanhp.fif
+cp selfi20_s20/meanhp.fif selfi20_s20/170324/meanhp.fif
+cp selfi10_s10/meanhp.fif selfi10_s10/170208/meanhp.fif
+cp selfi10_s10/meanhp.fif selfi10_s10/170315/meanhp.fif
+cp selfi11_s11/meanhp.fif selfi11_s11/170210/meanhp.fif
+cp selfi11_s11/meanhp.fif selfi11_s11/170317/meanhp.fif
+cp selfi13_s13/meanhp.fif selfi13_s13/170210/meanhp.fif
+cp selfi13_s13/meanhp.fif selfi13_s13/170317/meanhp.fif
+cp selfi16_s16/meanhp.fif selfi16_s16/170215/meanhp.fif
+cp selfi16_s16/meanhp.fif selfi16_s16/170322/meanhp.fif
+cp selfi22_s22/meanhp.fif selfi22_s22/170310/meanhp.fif
+cp selfi22_s22/meanhp.fif selfi22_s22/170418/meanhp.fif
+
+cd selfi01_s01/170124
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif -bad 0532 2233 
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 0341 2233 1142
+cd ..
+cd ..
+
+cd selfi01_s01/170303
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif 
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif
+cd ..
+cd ..
+
+cd selfi06_s06/170203
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif -bad 1022
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 0222
+cd ..
+cd ..
+
+cd selfi06_s06/170502
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif 
+cd ..
+cd ..
+
+cd selfi15_s15/170215
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 2431
+cd ..
+cd ..
+
+cd selfi15_s15/170322
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif 
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif 
+cd ..
+cd ..
+
+cd selfi20_s20/170217
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif -bad 2431
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 2431
+cd ..
+cd ..
+
+cd selfi20_s20/170324
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif -bad 0222
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad
+cd ..
+cd ..
+
+cd selfi10_s10/170208
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif -bad 1022 2323  
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 1022 2323
+cd ..
+cd ..
+
+cd selfi10_s10/170315
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif -bad 0813
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 0813
+cd ..
+cd ..
+
+cd selfi11_s11/170210
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif -bad 1022 2313 
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 1022 2313
+cd ..
+cd ..
+
+cd selfi11_s11/170317
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif
+cd ..
+cd ..
+
+cd selfi13_s13/170210
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 1022 1721 
+cd ..
+cd ..
+
+cd selfi13_s13/170317
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif
+cd ..
+cd ..
+
+cd selfi16_s16/170215
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif  
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif  
+cd ..
+cd ..
+
+cd selfi16_s16/170322
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif -bad 0813 0913 2212
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 0813 2212
+cd ..
+cd ..
+
+cd selfi22_s22/170310
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif  
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif
+cd ..
+cd ..
+
+cd selfi22_s22/170418
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run01.fif -o run01_tsss_realign.fif
+maxfilter_cenir -gui -st 2000 -trans meanhp.fif -f run02.fif -o run02_tsss_realign.fif -bad 1842
+cd ..
+cd ..
+
+
+
+
+
+
+
+
+
+

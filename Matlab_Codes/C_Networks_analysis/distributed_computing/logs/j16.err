@@ -1,0 +1,7 @@
+{Error using load
+Cannot read file
+/pclxserver/raid11/data/SELFI/selfi16_s16/170215/run01_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_continuous_alpha.mat.
+
+Error in batch_forwardmodel1cm_beamforming_single_subject (line 123)
+            load(input_filename)
+} 

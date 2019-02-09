@@ -1,0 +1,434 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+For online documentation, see http://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+    ----------------------------------------------------
+	Your MATLAB license will expire in 41 days.
+	Please contact your system administrator or
+	MathWorks to renew this license.
+    ----------------------------------------------------
+
+subjectdata = 
+
+  struct with fields:
+
+    subjectdir: '/pclxserver/raid11/data/SELFI/selfi19_s19'
+
+
+subjectdata = 
+
+  struct with fields:
+
+    subjectdir: '/pclxserver/raid11/data/SELFI/selfi19_s19'
+      datadir1: '170217'
+      datadir2: '170322'
+     subjectnr: '19'
+       IRMdate: '2017_03_29'
+
+
+Outputdir =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19
+
+
+sensors_distances_filename =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19/170217/run01_tsss_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+sensors_distances = 
+
+  struct with fields:
+
+     balance: [11 struct]
+     chanori: [3063 double]
+     chanpos: [3063 double]
+    chantype: {3061 cell}
+    chanunit: {3061 cell}
+     coilori: [5103 double]
+     coilpos: [5103 double]
+    coordsys: 'neuromag'
+       label: {3061 cell}
+         tra: [306510 double]
+        type: 'neuromag306'
+        unit: 'cm'
+
+
+cfg = 
+
+  struct with fields:
+
+    grid: [11 struct]
+     mri: [11 struct]
+
+[Warning: adding /lena13/home_users/users/hazem/fieldtrip-20161231/external/spm8
+toolbox to your MATLAB path] 
+the input is volume data with dimensions [256 256 256]
+Converting the coordinate system from neuromag to spm
+[Warning: adding
+/lena13/home_users/users/hazem/fieldtrip-20161231/external/freesurfer toolbox
+to your MATLAB path] 
+Rescaling NIFTI: slope = 0.00342945, intercept = 0
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+performing the normalisation
+warping the individual anatomy to the template anatomy
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  21.76 Var = 22.9509
+ iteration  2:  FWHM =  14.31 Var = 1.56543
+ iteration  3:  FWHM =  13.53 Var = 1.06325
+ iteration  4:  FWHM =  13.18 Var = 0.915966
+ iteration  5:  FWHM =  13.03 Var = 0.858001
+ iteration  6:  FWHM =  12.95 Var = 0.829545
+ iteration  7:  FWHM =  12.89 Var = 0.811864
+ iteration  8:  FWHM =  12.85 Var = 0.800895
+ iteration  9:  FWHM =  12.81 Var = 0.789835
+ iteration 10:  FWHM =  12.78 Var = 0.782862
+ iteration 11:  FWHM =  12.76 Var = 0.777638
+ iteration 12:  FWHM =  12.75 Var = 0.774253
+ iteration 13:  FWHM =  12.74 Var = 0.77166
+ iteration 14:  FWHM =  12.73 Var = 0.769291
+ iteration 15:  FWHM =  12.72 Var = 0.767278
+ iteration 16:  FWHM =  12.71 Var = 0.764528
+creating normalised analyze-file for anatomy
+creating normalised analyze-file for inside
+the call to "ft_volumenormalise" took 104 seconds and required the additional allocation of an estimated 265 MB
+3294 dipoles inside, 3510 dipoles outside brain
+the call to "ft_prepare_sourcemodel" took 110 seconds and required the additional allocation of an estimated 285 MB
+
+cfg = 
+
+  struct with fields:
+
+    grad: [11 struct]
+
+
+cfg = 
+
+  struct with fields:
+
+          grad: [11 struct]
+          grid: [11 struct]
+     headmodel: [11 struct]
+     normalize: 'yes'
+    reducerank: 2
+
+using gradiometers specified in the configuration
+computing surface normals
+creating dipole grid based on user specified dipole positions
+using gradiometers specified in the configuration
+3294 dipoles inside, 3510 dipoles outside brain
+the call to "ft_prepare_sourcemodel" took 0 seconds and required the additional allocation of an estimated 1 MB
+computing leadfield
+computing leadfield 2/3294computing leadfield 4/3294computing leadfield 6/3294computing leadfield 8/3294computing leadfield 10/3294computing leadfield 12/3294computing leadfield 14/3294computing leadfield 16/3294computing leadfield 18/3294computing leadfield 20/3294computing leadfield 23/3294computing leadfield 25/3294computing leadfield 27/3294computing leadfield 30/3294computing leadfield 33/3294computing leadfield 36/3294computing leadfield 38/3294computing leadfield 41/3294computing leadfield 44/3294computing leadfield 47/3294computing leadfield 50/3294computing leadfield 53/3294computing leadfield 55/3294computing leadfield 58/3294computing leadfield 60/3294computing leadfield 62/3294computing leadfield 64/3294computing leadfield 66/3294computing leadfield 68/3294computing leadfield 71/3294computing leadfield 74/3294computing leadfield 76/3294computing leadfield 79/3294computing leadfield 82/3294computing leadfield 84/3294computing leadfield 86/3294computing leadfield 88/3294computing leadfield 90/3294computing leadfield 93/3294computing leadfield 95/3294computing leadfield 98/3294computing leadfield 100/3294computing leadfield 102/3294computing leadfield 105/3294computing leadfield 107/3294computing leadfield 109/3294computing leadfield 111/3294computing leadfield 113/3294computing leadfield 115/3294computing leadfield 117/3294computing leadfield 119/3294computing leadfield 121/3294computing leadfield 123/3294computing leadfield 125/3294computing leadfield 127/3294computing leadfield 128/3294computing leadfield 130/3294computing leadfield 132/3294computing leadfield 134/3294computing leadfield 136/3294computing leadfield 138/3294computing leadfield 140/3294computing leadfield 142/3294computing leadfield 144/3294computing leadfield 147/3294computing leadfield 149/3294computing leadfield 152/3294computing leadfield 154/3294computing leadfield 156/3294computing leadfield 158/3294computing leadfield 161/3294computing leadfield 164/3294computing leadfield 167/3294computing leadfield 170/3294computing leadfield 173/3294computing leadfield 176/3294computing leadfield 179/3294computing leadfield 182/3294computing leadfield 185/3294computing leadfield 188/3294computing leadfield 191/3294computing leadfield 194/3294computing leadfield 197/3294computing leadfield 200/3294computing leadfield 203/3294computing leadfield 206/3294computing leadfield 208/3294computing leadfield 211/3294computing leadfield 214/3294computing leadfield 217/3294computing leadfield 220/3294computing leadfield 223/3294computing leadfield 226/3294computing leadfield 229/3294computing leadfield 232/3294computing leadfield 235/3294computing leadfield 238/3294computing leadfield 241/3294computing leadfield 244/3294computing leadfield 247/3294computing leadfield 249/3294computing leadfield 251/3294computing leadfield 254/3294computing leadfield 256/3294computing leadfield 258/3294computing leadfield 260/3294computing leadfield 263/3294computing leadfield 265/3294computing leadfield 268/3294computing leadfield 270/3294computing leadfield 272/3294computing leadfield 279/3294computing leadfield 292/3294computing leadfield 303/3294computing leadfield 306/3294computing leadfield 309/3294computing leadfield 312/3294computing leadfield 315/3294computing leadfield 318/3294computing leadfield 321/3294computing leadfield 323/3294computing leadfield 326/3294computing leadfield 328/3294computing leadfield 330/3294computing leadfield 333/3294computing leadfield 336/3294computing leadfield 339/3294computing leadfield 342/3294computing leadfield 344/3294computing leadfield 346/3294computing leadfield 348/3294computing leadfield 350/3294computing leadfield 353/3294computing leadfield 356/3294computing leadfield 361/3294computing leadfield 364/3294computing leadfield 367/3294computing leadfield 370/3294computing leadfield 373/3294computing leadfield 376/3294computing leadfield 378/3294computing leadfield 380/3294computing leadfield 382/3294computing leadfield 384/3294computing leadfield 386/3294computing leadfield 388/3294computing leadfield 390/3294computing leadfield 391/3294computing leadfield 393/3294computing leadfield 395/3294computing leadfield 397/3294computing leadfield 401/3294computing leadfield 404/3294computing leadfield 407/3294computing leadfield 410/3294computing leadfield 413/3294computing leadfield 415/3294computing leadfield 418/3294computing leadfield 421/3294computing leadfield 424/3294computing leadfield 427/3294computing leadfield 430/3294computing leadfield 433/3294computing leadfield 436/3294computing leadfield 439/3294computing leadfield 442/3294computing leadfield 445/3294computing leadfield 447/3294computing leadfield 450/3294computing leadfield 452/3294computing leadfield 454/3294computing leadfield 457/3294computing leadfield 459/3294computing leadfield 462/3294computing leadfield 465/3294computing leadfield 470/3294computing leadfield 473/3294computing leadfield 476/3294computing leadfield 479/3294computing leadfield 482/3294computing leadfield 485/3294computing leadfield 487/3294computing leadfield 489/3294computing leadfield 491/3294computing leadfield 494/3294computing leadfield 497/3294computing leadfield 500/3294computing leadfield 503/3294computing leadfield 506/3294computing leadfield 508/3294computing leadfield 510/3294computing leadfield 513/3294computing leadfield 516/3294computing leadfield 519/3294computing leadfield 522/3294computing leadfield 526/3294computing leadfield 528/3294computing leadfield 531/3294computing leadfield 534/3294computing leadfield 536/3294computing leadfield 539/3294computing leadfield 541/3294computing leadfield 543/3294computing leadfield 545/3294computing leadfield 548/3294computing leadfield 551/3294computing leadfield 554/3294computing leadfield 557/3294computing leadfield 560/3294computing leadfield 563/3294computing leadfield 566/3294computing leadfield 569/3294computing leadfield 572/3294computing leadfield 575/3294computing leadfield 577/3294computing leadfield 580/3294computing leadfield 583/3294computing leadfield 585/3294computing leadfield 588/3294computing leadfield 591/3294computing leadfield 594/3294computing leadfield 597/3294computing leadfield 600/3294computing leadfield 603/3294computing leadfield 606/3294computing leadfield 609/3294computing leadfield 611/3294computing leadfield 614/3294computing leadfield 617/3294computing leadfield 620/3294computing leadfield 623/3294computing leadfield 626/3294computing leadfield 629/3294computing leadfield 632/3294computing leadfield 635/3294computing leadfield 646/3294computing leadfield 653/3294computing leadfield 656/3294computing leadfield 659/3294computing leadfield 662/3294computing leadfield 665/3294computing leadfield 668/3294computing leadfield 671/3294computing leadfield 674/3294computing leadfield 677/3294computing leadfield 680/3294computing leadfield 685/3294computing leadfield 694/3294computing leadfield 707/3294computing leadfield 723/3294computing leadfield 738/3294computing leadfield 749/3294computing leadfield 760/3294computing leadfield 764/3294computing leadfield 767/3294computing leadfield 770/3294computing leadfield 773/3294computing leadfield 776/3294computing leadfield 779/3294computing leadfield 782/3294computing leadfield 785/3294computing leadfield 788/3294computing leadfield 790/3294computing leadfield 792/3294computing leadfield 794/3294computing leadfield 796/3294computing leadfield 798/3294computing leadfield 800/3294computing leadfield 802/3294computing leadfield 805/3294computing leadfield 807/3294computing leadfield 809/3294computing leadfield 812/3294computing leadfield 814/3294computing leadfield 820/3294computing leadfield 827/3294computing leadfield 831/3294computing leadfield 834/3294computing leadfield 837/3294computing leadfield 840/3294computing leadfield 842/3294computing leadfield 844/3294computing leadfield 846/3294computing leadfield 848/3294computing leadfield 851/3294computing leadfield 854/3294computing leadfield 857/3294computing leadfield 860/3294computing leadfield 863/3294computing leadfield 866/3294computing leadfield 869/3294computing leadfield 872/3294computing leadfield 875/3294computing leadfield 878/3294computing leadfield 881/3294computing leadfield 884/3294computing leadfield 887/3294computing leadfield 890/3294computing leadfield 893/3294computing leadfield 897/3294computing leadfield 900/3294computing leadfield 903/3294computing leadfield 905/3294computing leadfield 908/3294computing leadfield 911/3294computing leadfield 914/3294computing leadfield 917/3294computing leadfield 920/3294computing leadfield 923/3294computing leadfield 926/3294computing leadfield 929/3294computing leadfield 932/3294computing leadfield 935/3294computing leadfield 938/3294computing leadfield 941/3294computing leadfield 944/3294computing leadfield 947/3294computing leadfield 949/3294computing leadfield 952/3294computing leadfield 955/3294computing leadfield 958/3294computing leadfield 961/3294computing leadfield 964/3294computing leadfield 970/3294computing leadfield 973/3294computing leadfield 976/3294computing leadfield 979/3294computing leadfield 982/3294computing leadfield 984/3294computing leadfield 987/3294computing leadfield 990/3294computing leadfield 993/3294computing leadfield 996/3294computing leadfield 998/3294computing leadfield 1001/3294computing leadfield 1003/3294computing leadfield 1006/3294computing leadfield 1008/3294computing leadfield 1011/3294computing leadfield 1013/3294computing leadfield 1016/3294computing leadfield 1018/3294computing leadfield 1020/3294computing leadfield 1022/3294computing leadfield 1025/3294computing leadfield 1027/3294computing leadfield 1030/3294computing leadfield 1033/3294computing leadfield 1036/3294computing leadfield 1038/3294computing leadfield 1041/3294computing leadfield 1043/3294computing leadfield 1046/3294computing leadfield 1049/3294computing leadfield 1052/3294computing leadfield 1054/3294computing leadfield 1057/3294computing leadfield 1060/3294computing leadfield 1061/3294computing leadfield 1064/3294computing leadfield 1067/3294computing leadfield 1070/3294computing leadfield 1073/3294computing leadfield 1076/3294computing leadfield 1078/3294computing leadfield 1081/3294computing leadfield 1084/3294computing leadfield 1087/3294computing leadfield 1090/3294computing leadfield 1092/3294computing leadfield 1094/3294computing leadfield 1097/3294computing leadfield 1100/3294computing leadfield 1103/3294computing leadfield 1106/3294computing leadfield 1109/3294computing leadfield 1112/3294computing leadfield 1115/3294computing leadfield 1118/3294computing leadfield 1121/3294computing leadfield 1124/3294computing leadfield 1127/3294computing leadfield 1129/3294computing leadfield 1132/3294computing leadfield 1137/3294computing leadfield 1140/3294computing leadfield 1143/3294computing leadfield 1146/3294computing leadfield 1150/3294computing leadfield 1153/3294computing leadfield 1156/3294computing leadfield 1159/3294computing leadfield 1162/3294computing leadfield 1165/3294computing leadfield 1168/3294computing leadfield 1172/3294computing leadfield 1175/3294computing leadfield 1178/3294computing leadfield 1181/3294computing leadfield 1184/3294computing leadfield 1187/3294computing leadfield 1190/3294computing leadfield 1193/3294computing leadfield 1196/3294computing leadfield 1199/3294computing leadfield 1202/3294computing leadfield 1205/3294computing leadfield 1208/3294computing leadfield 1211/3294computing leadfield 1214/3294computing leadfield 1217/3294computing leadfield 1219/3294computing leadfield 1222/3294computing leadfield 1225/3294computing leadfield 1228/3294computing leadfield 1231/3294computing leadfield 1233/3294computing leadfield 1235/3294computing leadfield 1238/3294computing leadfield 1241/3294computing leadfield 1244/3294computing leadfield 1247/3294computing leadfield 1250/3294computing leadfield 1253/3294computing leadfield 1255/3294computing leadfield 1258/3294computing leadfield 1261/3294computing leadfield 1264/3294computing leadfield 1267/3294computing leadfield 1270/3294computing leadfield 1273/3294computing leadfield 1276/3294computing leadfield 1279/3294computing leadfield 1281/3294computing leadfield 1286/3294computing leadfield 1295/3294computing leadfield 1300/3294computing leadfield 1302/3294computing leadfield 1305/3294computing leadfield 1308/3294computing leadfield 1311/3294computing leadfield 1314/3294computing leadfield 1317/3294computing leadfield 1319/3294computing leadfield 1322/3294computing leadfield 1325/3294computing leadfield 1328/3294computing leadfield 1330/3294computing leadfield 1332/3294computing leadfield 1335/3294computing leadfield 1338/3294computing leadfield 1341/3294computing leadfield 1343/3294computing leadfield 1346/3294computing leadfield 1349/3294computing leadfield 1352/3294computing leadfield 1355/3294computing leadfield 1358/3294computing leadfield 1370/3294computing leadfield 1379/3294computing leadfield 1385/3294computing leadfield 1388/3294computing leadfield 1395/3294computing leadfield 1405/3294computing leadfield 1416/3294computing leadfield 1419/3294computing leadfield 1421/3294computing leadfield 1423/3294computing leadfield 1425/3294computing leadfield 1427/3294computing leadfield 1429/3294computing leadfield 1432/3294computing leadfield 1435/3294computing leadfield 1438/3294computing leadfield 1441/3294computing leadfield 1443/3294computing leadfield 1445/3294computing leadfield 1448/3294computing leadfield 1451/3294computing leadfield 1454/3294computing leadfield 1457/3294computing leadfield 1460/3294computing leadfield 1463/3294computing leadfield 1466/3294computing leadfield 1469/3294computing leadfield 1473/3294computing leadfield 1476/3294computing leadfield 1479/3294computing leadfield 1482/3294computing leadfield 1485/3294computing leadfield 1488/3294computing leadfield 1495/3294computing leadfield 1498/3294computing leadfield 1501/3294computing leadfield 1504/3294computing leadfield 1507/3294computing leadfield 1510/3294computing leadfield 1513/3294computing leadfield 1516/3294computing leadfield 1519/3294computing leadfield 1522/3294computing leadfield 1525/3294computing leadfield 1528/3294computing leadfield 1531/3294computing leadfield 1534/3294computing leadfield 1537/3294computing leadfield 1540/3294computing leadfield 1543/3294computing leadfield 1546/3294computing leadfield 1549/3294computing leadfield 1552/3294computing leadfield 1555/3294computing leadfield 1558/3294computing leadfield 1561/3294computing leadfield 1564/3294computing leadfield 1567/3294computing leadfield 1570/3294computing leadfield 1573/3294computing leadfield 1576/3294computing leadfield 1579/3294computing leadfield 1582/3294computing leadfield 1585/3294computing leadfield 1588/3294computing leadfield 1591/3294computing leadfield 1594/3294computing leadfield 1597/3294computing leadfield 1600/3294computing leadfield 1603/3294computing leadfield 1606/3294computing leadfield 1609/3294computing leadfield 1612/3294computing leadfield 1614/3294computing leadfield 1616/3294computing leadfield 1619/3294computing leadfield 1622/3294computing leadfield 1626/3294computing leadfield 1635/3294computing leadfield 1648/3294computing leadfield 1651/3294computing leadfield 1654/3294computing leadfield 1657/3294computing leadfield 1660/3294computing leadfield 1663/3294computing leadfield 1665/3294computing leadfield 1667/3294computing leadfield 1669/3294computing leadfield 1672/3294computing leadfield 1674/3294computing leadfield 1676/3294computing leadfield 1679/3294computing leadfield 1682/3294computing leadfield 1685/3294computing leadfield 1688/3294computing leadfield 1691/3294computing leadfield 1695/3294computing leadfield 1698/3294computing leadfield 1706/3294computing leadfield 1713/3294computing leadfield 1716/3294computing leadfield 1719/3294computing leadfield 1722/3294computing leadfield 1725/3294computing leadfield 1728/3294computing leadfield 1731/3294computing leadfield 1734/3294computing leadfield 1737/3294computing leadfield 1740/3294computing leadfield 1743/3294computing leadfield 1746/3294computing leadfield 1752/3294computing leadfield 1762/3294computing leadfield 1765/3294computing leadfield 1768/3294computing leadfield 1771/3294computing leadfield 1774/3294computing leadfield 1776/3294computing leadfield 1779/3294computing leadfield 1782/3294computing leadfield 1785/3294computing leadfield 1788/3294computing leadfield 1790/3294computing leadfield 1793/3294computing leadfield 1796/3294computing leadfield 1799/3294computing leadfield 1802/3294computing leadfield 1805/3294computing leadfield 1808/3294computing leadfield 1811/3294computing leadfield 1814/3294computing leadfield 1817/3294computing leadfield 1820/3294computing leadfield 1823/3294computing leadfield 1825/3294computing leadfield 1828/3294computing leadfield 1831/3294computing leadfield 1834/3294computing leadfield 1837/3294computing leadfield 1840/3294computing leadfield 1843/3294computing leadfield 1846/3294computing leadfield 1848/3294computing leadfield 1851/3294computing leadfield 1854/3294computing leadfield 1857/3294computing leadfield 1860/3294computing leadfield 1862/3294computing leadfield 1864/3294computing leadfield 1867/3294computing leadfield 1869/3294computing leadfield 1872/3294computing leadfield 1875/3294computing leadfield 1878/3294computing leadfield 1881/3294computing leadfield 1883/3294computing leadfield 1886/3294computing leadfield 1889/3294computing leadfield 1891/3294computing leadfield 1894/3294computing leadfield 1896/3294computing leadfield 1900/3294computing leadfield 1902/3294computing leadfield 1904/3294computing leadfield 1906/3294computing leadfield 1908/3294computing leadfield 1910/3294computing leadfield 1912/3294computing leadfield 1914/3294computing leadfield 1915/3294computing leadfield 1917/3294computing leadfield 1919/3294computing leadfield 1921/3294computing leadfield 1924/3294computing leadfield 1927/3294computing leadfield 1929/3294computing leadfield 1932/3294computing leadfield 1934/3294computing leadfield 1937/3294computing leadfield 1940/3294computing leadfield 1942/3294computing leadfield 1945/3294computing leadfield 1947/3294computing leadfield 1950/3294computing leadfield 1953/3294computing leadfield 1955/3294computing leadfield 1958/3294computing leadfield 1961/3294computing leadfield 1964/3294computing leadfield 1967/3294computing leadfield 1972/3294computing leadfield 1975/3294computing leadfield 1978/3294computing leadfield 1981/3294computing leadfield 1984/3294computing leadfield 1987/3294computing leadfield 1990/3294computing leadfield 1993/3294computing leadfield 1996/3294computing leadfield 1999/3294computing leadfield 2002/3294computing leadfield 2005/3294computing leadfield 2015/3294computing leadfield 2025/3294computing leadfield 2034/3294computing leadfield 2044/3294computing leadfield 2050/3294computing leadfield 2053/3294computing leadfield 2056/3294computing leadfield 2059/3294computing leadfield 2073/3294computing leadfield 2088/3294computing leadfield 2104/3294computing leadfield 2120/3294computing leadfield 2135/3294computing leadfield 2147/3294computing leadfield 2158/3294computing leadfield 2173/3294computing leadfield 2178/3294computing leadfield 2181/3294computing leadfield 2184/3294computing leadfield 2187/3294computing leadfield 2190/3294computing leadfield 2193/3294computing leadfield 2196/3294computing leadfield 2199/3294computing leadfield 2202/3294computing leadfield 2205/3294computing leadfield 2208/3294computing leadfield 2211/3294computing leadfield 2214/3294computing leadfield 2217/3294computing leadfield 2226/3294computing leadfield 2236/3294computing leadfield 2248/3294computing leadfield 2263/3294computing leadfield 2275/3294computing leadfield 2287/3294computing leadfield 2298/3294computing leadfield 2309/3294computing leadfield 2320/3294computing leadfield 2331/3294computing leadfield 2338/3294computing leadfield 2342/3294computing leadfield 2350/3294computing leadfield 2366/3294computing leadfield 2382/3294computing leadfield 2398/3294computing leadfield 2414/3294computing leadfield 2430/3294computing leadfield 2445/3294computing leadfield 2460/3294computing leadfield 2470/3294computing leadfield 2479/3294computing leadfield 2488/3294computing leadfield 2494/3294computing leadfield 2496/3294computing leadfield 2499/3294computing leadfield 2501/3294computing leadfield 2503/3294computing leadfield 2506/3294computing leadfield 2509/3294computing leadfield 2512/3294computing leadfield 2515/3294computing leadfield 2518/3294computing leadfield 2522/3294computing leadfield 2524/3294computing leadfield 2527/3294computing leadfield 2529/3294computing leadfield 2532/3294computing leadfield 2535/3294computing leadfield 2538/3294computing leadfield 2541/3294computing leadfield 2544/3294computing leadfield 2547/3294computing leadfield 2550/3294computing leadfield 2552/3294computing leadfield 2555/3294computing leadfield 2558/3294computing leadfield 2562/3294computing leadfield 2564/3294computing leadfield 2566/3294computing leadfield 2568/3294computing leadfield 2570/3294computing leadfield 2572/3294computing leadfield 2574/3294computing leadfield 2576/3294computing leadfield 2579/3294computing leadfield 2582/3294computing leadfield 2585/3294computing leadfield 2588/3294computing leadfield 2592/3294computing leadfield 2597/3294computing leadfield 2602/3294computing leadfield 2607/3294computing leadfield 2609/3294computing leadfield 2611/3294computing leadfield 2614/3294computing leadfield 2617/3294computing leadfield 2629/3294computing leadfield 2639/3294computing leadfield 2649/3294computing leadfield 2659/3294computing leadfield 2671/3294computing leadfield 2681/3294computing leadfield 2685/3294computing leadfield 2689/3294computing leadfield 2692/3294computing leadfield 2696/3294computing leadfield 2699/3294computing leadfield 2702/3294computing leadfield 2705/3294computing leadfield 2708/3294computing leadfield 2711/3294computing leadfield 2714/3294computing leadfield 2717/3294computing leadfield 2720/3294computing leadfield 2723/3294computing leadfield 2726/3294computing leadfield 2728/3294computing leadfield 2731/3294computing leadfield 2734/3294computing leadfield 2736/3294computing leadfield 2738/3294computing leadfield 2740/3294computing leadfield 2744/3294computing leadfield 2750/3294computing leadfield 2756/3294computing leadfield 2762/3294computing leadfield 2768/3294computing leadfield 2776/3294computing leadfield 2782/3294computing leadfield 2788/3294computing leadfield 2794/3294computing leadfield 2800/3294computing leadfield 2805/3294computing leadfield 2808/3294computing leadfield 2813/3294computing leadfield 2820/3294computing leadfield 2828/3294computing leadfield 2837/3294computing leadfield 2849/3294computing leadfield 2857/3294computing leadfield 2866/3294computing leadfield 2876/3294computing leadfield 2885/3294computing leadfield 2894/3294computing leadfield 2902/3294computing leadfield 2912/3294computing leadfield 2919/3294computing leadfield 2927/3294computing leadfield 2935/3294computing leadfield 2945/3294computing leadfield 2954/3294computing leadfield 2966/3294computing leadfield 2978/3294computing leadfield 2987/3294computing leadfield 2998/3294computing leadfield 3005/3294computing leadfield 3015/3294computing leadfield 3027/3294computing leadfield 3030/3294computing leadfield 3041/3294computing leadfield 3050/3294computing leadfield 3059/3294computing leadfield 3068/3294computing leadfield 3078/3294computing leadfield 3086/3294computing leadfield 3093/3294computing leadfield 3103/3294computing leadfield 3113/3294computing leadfield 3120/3294computing leadfield 3130/3294computing leadfield 3140/3294computing leadfield 3149/3294computing leadfield 3158/3294computing leadfield 3166/3294computing leadfield 3174/3294computing leadfield 3183/3294computing leadfield 3193/3294computing leadfield 3202/3294computing leadfield 3211/3294computing leadfield 3220/3294computing leadfield 3235/3294computing leadfield 3249/3294computing leadfield 3264/3294computing leadfield 3278/3294computing leadfield 3291/3294computing leadfield 3294/3294
+the call to "ft_prepare_leadfield" took 115 seconds and required the additional allocation of an estimated 97 MB
+
+datadir =
+
+subjectdata.datadir1
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19/170217/run01_tsss_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+condition =
+
+High_contact
+
+
+data_epoched_HC_R1 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [332 double]
+          grad: [11 struct]
+         trial: {133 cell}
+          time: {133 cell}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19/170217/run02_tsss_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+condition =
+
+High_contact
+
+
+data_epoched_HC_R2 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [342 double]
+          grad: [11 struct]
+         trial: {134 cell}
+          time: {134 cell}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+datadir =
+
+subjectdata.datadir2
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19/170322/run01_tsss_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+condition =
+
+Low_contact
+
+
+data_epoched_LC_R1 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [312 double]
+          grad: [11 struct]
+         trial: {131 cell}
+          time: {131 cell}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19/170322/run02_tsss_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+condition =
+
+Low_contact
+
+
+data_epoched_LC_R2 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [292 double]
+          grad: [11 struct]
+         trial: {129 cell}
+          time: {129 cell}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+input dataset 1, 323 channels, 33 trials
+input dataset 2, 323 channels, 34 trials
+input dataset 3, 323 channels, 31 trials
+input dataset 4, 323 channels, 29 trials
+concatenating the trials over all datasets
+removing sensor information from output
+removing sampleinfo field from output
+the call to "ft_appenddata" took 71 seconds and required the additional allocation of an estimated 28 MB
+
+n1 =
+
+    33
+
+
+n2 =
+
+    34
+
+
+n3 =
+
+    31
+
+
+n4 =
+
+    29
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1127 cell}
+         time: {1127 cell}
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1127 double]
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1127 cell}
+         time: {1127 cell}
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1127 double]
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1127 cell}
+         time: {1127 cell}
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1127 double]
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1127 cell}
+         time: {1127 cell}
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1127 double]
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1127 cell}
+         time: {1127 cell}
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1127 double]
+
+
+datadir =
+
+subjectdata.datadir1
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19/170217/run01_tsss_ica_eye_corrected_grad_ica_cardio_corrected_grad_continuous_alpha.mat
+
+
+condition =
+
+High_contact
+
+
+data_continuous_HC_R1 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 360000]
+          grad: [11 struct]
+         trial: {[323360000 double]}
+          time: {[1360000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19/170217/run02_tsss_ica_eye_corrected_grad_ica_cardio_corrected_grad_continuous_alpha.mat
+
+
+condition =
+
+High_contact
+
+
+data_continuous_HC_R2 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 303000]
+          grad: [11 struct]
+         trial: {[323303000 double]}
+          time: {[1303000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+datadir =
+
+subjectdata.datadir2
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19/170322/run01_tsss_ica_eye_corrected_grad_ica_cardio_corrected_grad_continuous_alpha.mat
+
+
+condition =
+
+Low_contact
+
+
+data_continuous_LC_R1 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 361000]
+          grad: [11 struct]
+         trial: {[323361000 double]}
+          time: {[1361000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi19_s19/170322/run02_tsss_ica_eye_corrected_grad_ica_cardio_corrected_grad_continuous_alpha.mat
+
+
+condition =
+
+Low_contact
+
+
+data_continuous_LC_R2 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 343000]
+          grad: [11 struct]
+         trial: {[323343000 double]}
+          time: {[1343000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+

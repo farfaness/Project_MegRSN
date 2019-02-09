@@ -1,0 +1,588 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+[Warning: Name is nonexistent or not a directory:
+/lena13/home_users/users/hazem/Documents/MATLAB/usr/cenir/matlab/mega_toolbox] 
+[Warning: Name is nonexistent or not a directory:
+/export/data/applications/matlab/upmc/R2016b/toolbox/shared/eml/eml] 
+[Warning: Name is nonexistent or not a directory:
+/export/data/applications/matlab/upmc/R2016b/toolbox/sam/m3i] 
+ 
+For online documentation, see http://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+Undefined function or variable 'matlab.internal.getSettingsRoot'.
+[Warning: MATLAB did not appear to successfully set the search path. To recover
+for this session of MATLAB, type "restoredefaultpath;matlabrc". To find out how
+to avoid this warning the next time you start MATLAB, type "docsearch problem
+path" after recovering for this session.] 
+    ----------------------------------------------------
+	Your MATLAB license will expire in 41 days.
+	Please contact your system administrator or
+	MathWorks to renew this license.
+    ----------------------------------------------------
+
+subjectdata = 
+
+  struct with fields:
+
+    subjectdir: '/pclxserver/raid11/data/SELFI/selfi10_s10'
+
+
+subjectdata = 
+
+  struct with fields:
+
+    subjectdir: '/pclxserver/raid11/data/SELFI/selfi10_s10'
+      datadir1: '170208'
+      datadir2: '170315'
+     subjectnr: '10'
+       IRMdate: '2017_03_22'
+
+
+Outputdir =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10
+
+
+sensors_distances_filename =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10/170208/run01_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+sensors_distances = 
+
+  struct with fields:
+
+     balance: [11 struct]
+     chanori: [3063 double]
+     chanpos: [3063 double]
+    chantype: {3061 cell}
+    chanunit: {3061 cell}
+     coilori: [5103 double]
+     coilpos: [5103 double]
+    coordsys: 'neuromag'
+       label: {3061 cell}
+         tra: [306510 double]
+        type: 'neuromag306'
+        unit: 'cm'
+
+
+cfg = 
+
+  struct with fields:
+
+    grid: [11 struct]
+     mri: [11 struct]
+
+[Warning: adding /lena13/home_users/users/hazem/fieldtrip-20161231/external/spm8
+toolbox to your MATLAB path] 
+the input is volume data with dimensions [256 256 256]
+Converting the coordinate system from neuromag to spm
+[Warning: adding
+/lena13/home_users/users/hazem/fieldtrip-20161231/external/freesurfer toolbox
+to your MATLAB path] 
+Rescaling NIFTI: slope = 0.00342945, intercept = 0
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+performing the normalisation
+warping the individual anatomy to the template anatomy
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =   17.6 Var = 8.4992
+ iteration  2:  FWHM =  15.05 Var = 2.30981
+ iteration  3:  FWHM =  15.14 Var = 2.01852
+ iteration  4:  FWHM =  15.02 Var = 1.95931
+ iteration  5:  FWHM =  14.89 Var = 1.88932
+ iteration  6:  FWHM =  14.75 Var = 1.82844
+ iteration  7:  FWHM =  14.68 Var = 1.79653
+ iteration  8:  FWHM =  14.61 Var = 1.76748
+ iteration  9:  FWHM =  14.55 Var = 1.74499
+ iteration 10:  FWHM =   14.5 Var = 1.72136
+ iteration 11:  FWHM =  14.46 Var = 1.7045
+ iteration 12:  FWHM =  14.43 Var = 1.69226
+ iteration 13:  FWHM =   14.4 Var = 1.67978
+ iteration 14:  FWHM =  14.36 Var = 1.66543
+ iteration 15:  FWHM =  14.34 Var = 1.65599
+ iteration 16:  FWHM =  14.32 Var = 1.64806
+creating normalised analyze-file for anatomy
+creating normalised analyze-file for inside
+the call to "ft_volumenormalise" took 62 seconds and required the additional allocation of an estimated 274 MB
+3294 dipoles inside, 3510 dipoles outside brain
+the call to "ft_prepare_sourcemodel" took 70 seconds and required the additional allocation of an estimated 294 MB
+
+cfg = 
+
+  struct with fields:
+
+    grad: [11 struct]
+
+
+cfg = 
+
+  struct with fields:
+
+          grad: [11 struct]
+          grid: [11 struct]
+     headmodel: [11 struct]
+     normalize: 'yes'
+    reducerank: 2
+
+using gradiometers specified in the configuration
+computing surface normals
+creating dipole grid based on user specified dipole positions
+using gradiometers specified in the configuration
+3294 dipoles inside, 3510 dipoles outside brain
+the call to "ft_prepare_sourcemodel" took 0 seconds and required the additional allocation of an estimated 1 MB
+computing leadfield
+computing leadfield 4/3294computing leadfield 15/3294computing leadfield 33/3294computing leadfield 51/3294computing leadfield 69/3294computing leadfield 85/3294computing leadfield 101/3294computing leadfield 112/3294computing leadfield 123/3294computing leadfield 137/3294computing leadfield 153/3294computing leadfield 165/3294computing leadfield 182/3294computing leadfield 195/3294computing leadfield 209/3294computing leadfield 221/3294computing leadfield 235/3294computing leadfield 252/3294computing leadfield 265/3294computing leadfield 279/3294computing leadfield 293/3294computing leadfield 306/3294computing leadfield 317/3294computing leadfield 332/3294computing leadfield 342/3294computing leadfield 353/3294computing leadfield 361/3294computing leadfield 374/3294computing leadfield 386/3294computing leadfield 400/3294computing leadfield 413/3294computing leadfield 423/3294computing leadfield 435/3294computing leadfield 449/3294computing leadfield 464/3294computing leadfield 479/3294computing leadfield 490/3294computing leadfield 502/3294computing leadfield 516/3294computing leadfield 525/3294computing leadfield 535/3294computing leadfield 544/3294computing leadfield 554/3294computing leadfield 564/3294computing leadfield 576/3294computing leadfield 588/3294computing leadfield 599/3294computing leadfield 610/3294computing leadfield 621/3294computing leadfield 630/3294computing leadfield 641/3294computing leadfield 652/3294computing leadfield 665/3294computing leadfield 676/3294computing leadfield 690/3294computing leadfield 700/3294computing leadfield 709/3294computing leadfield 718/3294computing leadfield 728/3294computing leadfield 739/3294computing leadfield 749/3294computing leadfield 761/3294computing leadfield 773/3294computing leadfield 785/3294computing leadfield 797/3294computing leadfield 806/3294computing leadfield 817/3294computing leadfield 829/3294computing leadfield 843/3294computing leadfield 857/3294computing leadfield 872/3294computing leadfield 885/3294computing leadfield 899/3294computing leadfield 913/3294computing leadfield 926/3294computing leadfield 938/3294computing leadfield 953/3294computing leadfield 962/3294computing leadfield 968/3294computing leadfield 978/3294computing leadfield 992/3294computing leadfield 1004/3294computing leadfield 1014/3294computing leadfield 1025/3294computing leadfield 1037/3294computing leadfield 1050/3294computing leadfield 1063/3294computing leadfield 1073/3294computing leadfield 1083/3294computing leadfield 1094/3294computing leadfield 1103/3294computing leadfield 1115/3294computing leadfield 1123/3294computing leadfield 1132/3294computing leadfield 1140/3294computing leadfield 1149/3294computing leadfield 1157/3294computing leadfield 1165/3294computing leadfield 1172/3294computing leadfield 1185/3294computing leadfield 1195/3294computing leadfield 1206/3294computing leadfield 1221/3294computing leadfield 1242/3294computing leadfield 1264/3294computing leadfield 1286/3294computing leadfield 1308/3294computing leadfield 1330/3294computing leadfield 1352/3294computing leadfield 1373/3294computing leadfield 1394/3294computing leadfield 1415/3294computing leadfield 1437/3294computing leadfield 1459/3294computing leadfield 1481/3294computing leadfield 1504/3294computing leadfield 1527/3294computing leadfield 1550/3294computing leadfield 1572/3294computing leadfield 1595/3294computing leadfield 1617/3294computing leadfield 1639/3294computing leadfield 1662/3294computing leadfield 1684/3294computing leadfield 1699/3294computing leadfield 1713/3294computing leadfield 1726/3294computing leadfield 1740/3294computing leadfield 1755/3294computing leadfield 1769/3294computing leadfield 1784/3294computing leadfield 1799/3294computing leadfield 1815/3294computing leadfield 1831/3294computing leadfield 1846/3294computing leadfield 1859/3294computing leadfield 1872/3294computing leadfield 1883/3294computing leadfield 1895/3294computing leadfield 1903/3294computing leadfield 1914/3294computing leadfield 1929/3294computing leadfield 1943/3294computing leadfield 1957/3294computing leadfield 1971/3294computing leadfield 1985/3294computing leadfield 1999/3294computing leadfield 2014/3294computing leadfield 2028/3294computing leadfield 2043/3294computing leadfield 2057/3294computing leadfield 2072/3294computing leadfield 2083/3294computing leadfield 2098/3294computing leadfield 2110/3294computing leadfield 2123/3294computing leadfield 2134/3294computing leadfield 2146/3294computing leadfield 2159/3294computing leadfield 2173/3294computing leadfield 2180/3294computing leadfield 2193/3294computing leadfield 2204/3294computing leadfield 2216/3294computing leadfield 2228/3294computing leadfield 2243/3294computing leadfield 2258/3294computing leadfield 2271/3294computing leadfield 2284/3294computing leadfield 2298/3294computing leadfield 2311/3294computing leadfield 2325/3294computing leadfield 2340/3294computing leadfield 2354/3294computing leadfield 2365/3294computing leadfield 2376/3294computing leadfield 2392/3294computing leadfield 2407/3294computing leadfield 2419/3294computing leadfield 2428/3294computing leadfield 2441/3294computing leadfield 2456/3294computing leadfield 2468/3294computing leadfield 2478/3294computing leadfield 2490/3294computing leadfield 2505/3294computing leadfield 2516/3294computing leadfield 2525/3294computing leadfield 2539/3294computing leadfield 2550/3294computing leadfield 2562/3294computing leadfield 2576/3294computing leadfield 2592/3294computing leadfield 2605/3294computing leadfield 2620/3294computing leadfield 2635/3294computing leadfield 2646/3294computing leadfield 2657/3294computing leadfield 2669/3294computing leadfield 2684/3294computing leadfield 2699/3294computing leadfield 2714/3294computing leadfield 2726/3294computing leadfield 2743/3294computing leadfield 2757/3294computing leadfield 2771/3294computing leadfield 2786/3294computing leadfield 2804/3294computing leadfield 2819/3294computing leadfield 2833/3294computing leadfield 2844/3294computing leadfield 2857/3294computing leadfield 2866/3294computing leadfield 2875/3294computing leadfield 2888/3294computing leadfield 2900/3294computing leadfield 2913/3294computing leadfield 2924/3294computing leadfield 2935/3294computing leadfield 2946/3294computing leadfield 2961/3294computing leadfield 2976/3294computing leadfield 2992/3294computing leadfield 3007/3294computing leadfield 3019/3294computing leadfield 3031/3294computing leadfield 3043/3294computing leadfield 3060/3294computing leadfield 3076/3294computing leadfield 3092/3294computing leadfield 3104/3294computing leadfield 3119/3294computing leadfield 3133/3294computing leadfield 3148/3294computing leadfield 3164/3294computing leadfield 3179/3294computing leadfield 3194/3294computing leadfield 3205/3294computing leadfield 3214/3294computing leadfield 3226/3294computing leadfield 3239/3294computing leadfield 3252/3294computing leadfield 3265/3294computing leadfield 3277/3294computing leadfield 3289/3294computing leadfield 3294/3294
+the call to "ft_prepare_leadfield" took 60 seconds and required the additional allocation of an estimated 97 MB
+
+datadir =
+
+subjectdata.datadir1
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10/170208/run01_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+condition =
+
+Low_contact
+
+
+data_epoched_LC_R1 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [332 double]
+          grad: [11 struct]
+         trial: {133 cell}
+          time: {133 cell}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10/170208/run02_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+condition =
+
+Low_contact
+
+
+data_epoched_LC_R2 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [362 double]
+          grad: [11 struct]
+         trial: {136 cell}
+          time: {136 cell}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+datadir =
+
+subjectdata.datadir2
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10/170315/run01_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+condition =
+
+High_contact
+
+
+data_epoched_HC_R1 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [342 double]
+          grad: [11 struct]
+         trial: {134 cell}
+          time: {134 cell}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10/170315/run02_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_epoched_alpha.mat
+
+
+condition =
+
+High_contact
+
+
+data_epoched_HC_R2 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [332 double]
+          grad: [11 struct]
+         trial: {133 cell}
+          time: {133 cell}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+input dataset 1, 323 channels, 34 trials
+input dataset 2, 323 channels, 33 trials
+input dataset 3, 323 channels, 33 trials
+input dataset 4, 323 channels, 36 trials
+concatenating the trials over all datasets
+removing sampleinfo field from output
+the call to "ft_appenddata" took 0 seconds and required the additional allocation of an estimated 7 MB
+
+n1 =
+
+    34
+
+
+n2 =
+
+    33
+
+
+n3 =
+
+    33
+
+
+n4 =
+
+    36
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1136 cell}
+         time: {1136 cell}
+         grad: [11 struct]
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1136 double]
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1136 cell}
+         time: {1136 cell}
+         grad: [11 struct]
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1136 double]
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1136 cell}
+         time: {1136 cell}
+         grad: [11 struct]
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1136 double]
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1136 cell}
+         time: {1136 cell}
+         grad: [11 struct]
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1136 double]
+
+
+data_epoched_concat = 
+
+  struct with fields:
+
+        label: {3231 cell}
+        trial: {1136 cell}
+         time: {1136 cell}
+         grad: [11 struct]
+      fsample: 1000
+          cfg: [11 struct]
+    condition: [1136 double]
+
+
+datadir =
+
+subjectdata.datadir1
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10/170208/run01_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_continuous_alpha.mat
+
+
+condition =
+
+Low_contact
+
+
+data_continuous_LC_R1 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 307000]
+          grad: [11 struct]
+         trial: {[323307000 double]}
+          time: {[1307000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10/170208/run02_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_continuous_alpha.mat
+
+
+condition =
+
+Low_contact
+
+
+data_continuous_LC_R2 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 334000]
+          grad: [11 struct]
+         trial: {[323334000 double]}
+          time: {[1334000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+datadir =
+
+subjectdata.datadir2
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10/170315/run01_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_continuous_alpha.mat
+
+
+condition =
+
+High_contact
+
+
+data_continuous_HC_R1 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 314000]
+          grad: [11 struct]
+         trial: {[323314000 double]}
+          time: {[1314000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+input_filename =
+
+/pclxserver/raid11/data/SELFI/selfi10_s10/170315/run02_tsss_realign_ica_eye_corrected_grad_ica_cardio_corrected_grad_continuous_alpha.mat
+
+
+condition =
+
+High_contact
+
+
+data_continuous_HC_R2 = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 316000]
+          grad: [11 struct]
+         trial: {[323316000 double]}
+          time: {[1316000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+
+
+n1 =
+
+      314000
+
+
+n2 =
+
+      316000
+
+
+n3 =
+
+      307000
+
+
+n4 =
+
+      334000
+
+
+data_continuous_concat = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 314000]
+          grad: [11 struct]
+         trial: {[3231271000 double]}
+          time: {[11271000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+     condition: [11271000 double]
+
+
+data_continuous_concat = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 314000]
+          grad: [11 struct]
+         trial: {[3231271000 double]}
+          time: {[11271000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+     condition: [11271000 double]
+
+
+data_continuous_concat = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 314000]
+          grad: [11 struct]
+         trial: {[3231271000 double]}
+          time: {[11271000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+     condition: [11271000 double]
+
+
+data_continuous_concat = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 314000]
+          grad: [11 struct]
+         trial: {[3231271000 double]}
+          time: {[11271000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+     condition: [11271000 double]
+
+
+data_continuous_concat = 
+
+  struct with fields:
+
+           hdr: [11 struct]
+       fsample: 1000
+    sampleinfo: [1 314000]
+          grad: [11 struct]
+         trial: {[3231271000 double]}
+          time: {[11271000 double]}
+         label: {3231 cell}
+           cfg: [11 struct]
+     condition: [11271000 double]
+
+
+###############
+Computing covariance matrix...
+
+
+cfg = 
+
+  struct with fields:
+
+    channel: {'megmag'}
+
+the input is raw data with 323 channels and 136 trials
+         label: {3231 cell}
+         trial: {1136 cell}
+          time: {1136 cell}
+          grad: [11 struct]
+       fsample: 1000
+           cfg: [11 struct]
+     condition: [1136 double]
+    sampleinfo: [1362 double]
+
+the call to "ft_selectdata" took 615 seconds and required the additional allocation of an estimated 1288 MB
+averaging trials
+averaging trial 1 of 136averaging trial 2 of 136averaging trial 3 of 136averaging trial 4 of 136averaging trial 5 of 136averaging trial 6 of 136averaging trial 7 of 136averaging trial 8 of 136averaging trial 9 of 136averaging trial 10 of 136averaging trial 11 of 136averaging trial 12 of 136averaging trial 13 of 136averaging trial 15 of 136averaging trial 16 of 136averaging trial 18 of 136averaging trial 21 of 136averaging trial 24 of 136averaging trial 27 of 136averaging trial 28 of 136averaging trial 30 of 136averaging trial 32 of 136averaging trial 33 of 136averaging trial 35 of 136averaging trial 38 of 136averaging trial 40 of 136averaging trial 42 of 136averaging trial 44 of 136averaging trial 46 of 136averaging trial 48 of 136averaging trial 51 of 136averaging trial 54 of 136averaging trial 57 of 136averaging trial 60 of 136averaging trial 63 of 136averaging trial 64 of 136averaging trial 67 of 136averaging trial 70 of 136averaging trial 71 of 136averaging trial 74 of 136averaging trial 76 of 136averaging trial 79 of 136averaging trial 81 of 136averaging trial 84 of 136averaging trial 87 of 136averaging trial 90 of 136averaging trial 93 of 136averaging trial 96 of 136averaging trial 100 of 136averaging trial 102 of 136averaging trial 104 of 136averaging trial 106 of 136averaging trial 107 of 136averaging trial 111 of 136averaging trial 112 of 136averaging trial 114 of 136averaging trial 116 of 136averaging trial 119 of 136averaging trial 123 of 136averaging trial 127 of 136averaging trial 130 of 136averaging trial 133 of 136averaging trial 136 of 136
+the call to "ft_timelockanalysis" took 807 seconds and required the additional allocation of an estimated 1378 MB
+
+source_timecourses1cm = 
+
+  struct with fields:
+
+       pos: [68043 double]
+     trial: []
+       mom: []
+    filter: []
+     label: {'brain'}
+
+
+###############
+Downsampling data to 100 Hz...
+
+the input is raw data with 323 channels and 1 trials
+the call to "ft_selectdata" took 6 seconds and required the additional allocation of an estimated 2 MB
+resampling data
+resampling data in trial 1 from 1>> 

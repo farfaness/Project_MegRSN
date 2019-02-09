@@ -1,0 +1,6 @@
+# /export/data/opt/CENIR/bin/parallel -j 4 < /pclxserver/raid11/data/SELFI/scripts/jobs/do_all_4.bash
+
+bash /pclxserver/raid11/data/SELFI/script/Networks_analysis/distributed_computings/jobs/j16.bash >/pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/logs/j16.log 2>/pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/logs/j16.err
+bash /pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/jobs/j17.bash >/pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/logs/j17.log 2>/pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/logs/j17.err
+bash /pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/jobs/j19.bash >/pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/logs/j19.log 2>/pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/logs/j19.err
+bash /pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/jobs/j20.bash >/pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/logs/j20.log 2>/pclxserver/raid11/data/SELFI/scripts/Networks_analysis/distributed_computing/logs/j20.err

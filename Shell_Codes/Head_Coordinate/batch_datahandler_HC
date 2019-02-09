@@ -1,0 +1,32 @@
+#!/bin/tcsh
+
+set subjects = `ls -d selfi*`
+
+
+foreach subj ($subjects)
+
+        cd $subj
+
+        set exam_date = `ls -d 17*`
+
+        foreach ex_date ($exam_date)
+
+                cd $ex_date
+
+                set files2process = `ls run*_tsss.fif`
+
+                foreach filename ($files2process)
+
+                	dataHandler -r -hc  $filename
+
+                end
+
+                cd ..
+        end
+
+        cd ..
+
+end
+
+
+
